@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="books.js" type="module" async defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h2>LIBRARY</h2>
+            <p>Libraries are the treasuries of all the treasures of the human spirit.</p>
+        </header>
+        <menu class="menu">
+            <div class="menu_item active">Book</div>
+            <a class="menu_item" href="./visitors.html">
+                <div >Visitor</div>
+            </a>
+            <a class="menu_item" href="./cards.html">
+                <div>Card</div>
+            </a>
+            <a class="menu_item" href="./statistics.html">
+                <div >Statistic</div>
+            </a>
+        </menu>
+        <context class="context">
+            <div class="button_item">
+                <button class="button_add">Add</button>
+                <button class="button_del">Delete</button>
+                <button class="button_edit">Edit</button>
+                <input type="search" class="search_text" placeholder="Enter search">
+                    <select name="" id="" class="sort_text">
+                        <option value="Name a-z">Name a-z</option>
+                        <option value="Name z-a">Name z-a</option>
+                        <option value="Full name a-z">Full name a-z</option>
+                        <option value="Full name z-a">Full name z-a</option>
+                        <option value="Year 0-9">Year 0-9</option>
+                        <option value="Year 9-0">Year 9-0</option>
+                        <option value="Publisher a-z">Publisher a-z</option>
+                        <option value="Publisher z-a">Publisher z-a</option>
+                    </select>
+                    <button class="button_sort">Sort</button>
+            </div>
+            <table>
+                <tr class="first">
+                    <th>№ </th>
+                    <th>Name book </th>
+                    <th>Full name author</th>
+                    <th>Year</th>
+                    <th>Publisher</th>
+                    <th>Number of sides</th>
+                    <th>Number of books</th>
+                </tr>
+            </table>
+        </context>
+    </div>
+    <div class="form">
+        <div class="form_add">
+            <span>+</span>
+            <form>
+                <h3>Enter book details:</h3>
+                <label from="title">Name book:</label>
+                <input type="text" id="title" name="name_book">
+                <label from="name">Full name author:</label>
+                <input type="text" id="name" name="full_name">
+                <label from="year">Year of publication:</label>
+                <input type="text" id="year" name="year">
+                <label from="publishing">Name of the Publisher:</label>
+                <input type="text" id="publishing" name="publisher">
+                <label from="pages">Number of sides:</label>
+                <input type="text" id="pages" name="pages">
+                <label from="amount">Number of books:</label>
+                <input type="text" id="amount" name="amount">
+                <button type="button" class="button_save">Save</button>
+            </form>
+        </div>
+         <div class="error">
+             <p>You have not filled in all fields of the form.</p>
+             <button class="button_error">Close</button>
+         </div>
+    </div>
+</body>
+
+</html>

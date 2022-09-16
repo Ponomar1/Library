@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(229, 233, 211);
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(154, 163, 116);
+    display: flex;
+    position: fixed;
+    top: 0;
+}
+h2{
+    font-size: 2em;
+    padding-left: 10%;
+    padding-top: 1%;
+    color: rgb(224, 213, 213);
+}
+.header>p{
+    position:absolute;
+    padding-top: 2%;
+    right: 5%;
+    color: rgb(224, 213, 213);
+}
+.menu{
+    width: 100%;
+    position: fixed;
+    top:0;
+    margin-top: 80px;
+    background-color: rgb(131, 140, 123);
+    display: flex;
+    z-index: 5;
+}
+a{
+    text-decoration: none;
+    color: rgb(224, 213, 213);
+}
+.menu_item{
+    width: 20%;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+    color: rgb(224, 213, 213);
+}
+.menu_item:hover{
+    border-bottom: solid 2px red;
+    background-color: rgb(119, 136, 102);
+}
+.active{
+    background-color: rgb(86, 100, 73);
+}
+.invalid{
+    border: 1px solid #ff0000 ;
+}
+.button_item{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top:0;
+    margin: 130px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(229, 233, 211);
+}
+.stat_book,.stat_visitor{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.stat_book {
+    margin-top: 150px;
+}
+.stat_book p,
+.stat_visitor p{
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+}
+.stat_book table,
+.stat_visitor table{
+    width: 50%;
+    font-size: 1em;
+    text-align: center;
+    margin: 20px  auto;
+}
+button{
+    display: block;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(131, 140, 123);
+    color: rgb(224, 213, 213);
+    border-style: none;
+    margin: 10px auto;
+}
+button:hover,
+tr:hover {
+    background-color: rgb(165, 183, 146);
+    font-size: 1em;
+    cursor: pointer;
+}
+input,
+select{
+    display: block;
+    outline: none;
+    border-radius: 5px;
+    border-width: 0;
+    font-size: 1em;
+    padding-left: 10px;
+    width: 300px;
+}
+
+.sort_text,.search_text{
+    height: 40px;
+    margin: 10px auto;
+}
+table{
+    width: 90%;
+    margin: 215px auto;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+.first{
+    width: 90%;
+    position: sticky;
+    top: 215px;
+    z-index: 100px;
+    background-color: rgb(229, 233, 211);
+}
+td,th{
+    padding: 10px 20px;
+    text-align: center; 
+    border: 1px solid #000;
+}
+.return{
+    width: 100px;
+    height: 20px;
+    background-color: rgb(229, 233, 211);
+    color:#000;
+    margin: 0px auto;
+}
+.hide{
+    display: none;
+}
+.form{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form_add{
+    width: 500px;
+    display: block;
+    background-color: rgb(154, 163, 116);
+    border-radius: 25px;
+    position: relative;
+}
+.button_save,.error button{
+    margin: 10px auto;
+}
+span {
+    position: absolute;
+    top:10px;
+    right: 20px;
+    transform: rotate(45deg);
+    font-size: 2em;
+    color: rgb(86, 100, 73);
+}
+span:hover{
+    font-size: 2.5em;
+    cursor: pointer;
+}
+form{
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.1em;
+    color: rgb(224, 213, 213);
+}
+form>h3{
+    margin: 50px 20px 20px;
+}
+form>input,select{
+    width: 300px;
+    padding: 10px;
+    margin: 10px auto;
+}
+.error{
+    display: none;
+    background-color: rgb(86, 100, 73);
+    color:#fff;
+    border-radius: 25px;
+    position: absolute;
+    padding: 25px;
+    width: 20%;
+}
+.error p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1440px) {
+    .sort_text,.search_text {
+        width: 200px;
+    }
+    form>input,
+    select {
+        width: 200px;
+    }
+    .form_add {
+        width: 400px;
+    }
+}
+@media (max-width: 1024px) {
+    button {
+        width: 60px;
+    }
+    .sort_text,
+    .search_text {
+        width: 150px;
+    }
+}
+@media (max-width: 768px) {
+    table{
+        font-size:0.8em;
+    }
+}

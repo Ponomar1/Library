@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="visitors.js" async defer type="module"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h2>LIBRARY</h2>
+            <p>Libraries are the treasuries of all the treasures of the human spirit.</p>
+        </header>
+        <menu class="menu">
+            <a class="menu_item" href="./books.html">
+                <div >Books</div>
+            </a>
+            <div class="menu_item active">Visitor</div>
+            <a class="menu_item" href="./cards.html">
+                <div>Cards</div>
+            </a>
+            <a class="menu_item" href="./statistics.html">
+                <div>Statistics</div>
+            </a>
+        </menu>
+        <context class="context">
+            <div class="button_item">
+                <button class="button_add">Add</button>
+                <button class="button_del">Delete</button>
+                <button class="button_edit">Edit</button>
+                <input type="search" class="search_text">
+                <select name="" id="" class="sort_text" placeholder="Назва">
+                    <option value="Full name a-z">Full name a-z</option>
+                    <option value="Full name z-a">Full name z-a</option>
+                </select>
+                <button class="button_sort">Sort</button>
+            </div>
+            <table>
+                <tr class="first">
+                    <td>№</td>
+                    <td>Full name</td>
+                    <td>Phone number</td>
+                </tr>
+            </table>
+        </context>
+    </div>
+    <div class="form">
+        <div class="form_add">
+            <span>+</span>
+            <form>
+                <h3>Enter visitor details:</h3>
+                <p>Full name visitor:</p>
+                <input type="text" id="fio">
+                <p>Telephone:</p>
+                <input type="text" id="tel" placeholder="(000)000-00-00" />
+                <button type="button" class="button_save">Save</button>
+            </form>
+        </div>
+        <div class="error">
+            <p>You have not filled in all fields of the form.</p>
+            <button class="button_error">Close</button>
+        </div>
+    </div>
+</body>
+
+</html>

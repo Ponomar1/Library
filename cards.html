@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="cards.js" type="module" async defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h2>LIBRARY</h2>
+            <p>Libraries are the treasuries of all the treasures of the human spirit.</p>
+        </header>
+        <menu class="menu">
+            <a class="menu_item" href="./books.html">
+                <div>Books</div>
+            </a>
+            <a class="menu_item" href="./visitors.html">
+                <div>Visitor</div>
+            </a>
+            <div class="menu_item active">Cards</div>
+            <a class="menu_item" href="./statistics.html">
+                <div>Statistic</div>
+            </a>
+        </menu>
+        <context class="context">
+            <div class="button_item">
+                <button class="button_add">Add</button>
+                <input type="search" class="search_text" placeholder="Enter search">
+                    <select name="" id="" class="sort_text">
+                        <option value="Full name visitor 0-9">Full name visitor 0-9</option>
+                        <option value="Full name visitor 9-0">Full name visitor 9-0</option>
+                        <option value="Name book 0-9">Name book 0-9</option>
+                        <option value="Name book 9-0">Name book 9-0</option>
+                    </select>
+                    <button class="button_sort">Sort</button>
+            </div>
+            <table>
+                <tr class="first">
+                    <th>№</th>
+                    <th>№ visitor</th>
+                    <th>№ book</th>
+                    <th>Date of taking</th>
+                    <th>Return data</th>
+                </tr>
+            </table>
+        </context>
+    </div>
+    <div class="form">
+        <div class="form_add">
+            <span>+</span>
+            <form>
+                <h3>Enter card details:</h3>
+                <p>Full name visitor:</p>
+                <select id="visitor">
+                </select>
+                <p>Name of the book:</p>
+                <select id="book" >
+                </select>
+                <button type="button" class="button_save">Save</button>
+            </form>
+        </div>
+        <div class="error">
+            <p>You have not filled in all fields of the form.</p>
+            <button class="button_error">Close</button>
+        </div>
+    </div>
+</body>
+
+</html>
